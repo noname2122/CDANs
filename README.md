@@ -2,13 +2,23 @@
 
 ## Organization of the files and folders
 1. The datasets used in the experiments are located in the "data" directory
-    a.  synthetic_data.csv - Contains the synthetic data generated for the experiments
+
+
+    a. synthetic_data.csv - Contains the synthetic data generated for the experiments
+    
     b.  ot_conservative.csv - Contains the oxygenation parameters and ventilator settings for the conservative oxygen therapy treatment
+    
     c.  ot_conservative.csv - Contains the oxygenation parameters and ventilator settings for the liberal oxygen therapy treatment
-3. The code used to run the experiments are located in the "code" directory
+    
+2. The code used to run the experiments are located in the "code" directory
+
+
     a. get_lagged_links.ipynb - A Python Jupyter notebook to estimated the lagged and autocorrelated causal relationships.
+    
     b. synthetic_data.mlx - A Matlab script that estimates the contemporaneous causal relationships and changing modules for *Synthetic Data* using the lagged relationships estimated in 3(a).
+    
     c. ot_conservative.mlx - A Matlab script that estimates the contemporaneous causal relationships and changing modules for *Conservative Oxygen Therapy* using the lagged relationships estimated in 3(a).
+    
     d. ot_liberal.mlx - A Matlab script that estimates the contemporaneous causal relationships and changing modules for *Liberal Oxygen Therapy* using the lagged relationships estimated in 3(a).
 
 ## How to run the code and obtain the results
